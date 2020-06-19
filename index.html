@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Calculadora de IAC</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='calculadora.css'>
+        <script language="javascript" src='calculadora.js'></script>
+    </head>
+
+    <body>
+        <form action="" id="formCalcIAC" name="formCalcIAC">
+            <fieldset>
+                <legend>Calculadora de IAC (Índice de Adiposidade Corporal)</legend>
+                <p>
+                    <label>Qual seu sexo?</label>
+                    <input type="radio" name="tSexo" id="cMasc" value="M" />
+                    <label id="lbMasc" for="cMasc">Masculino</label>
+                    <input type="radio" name="tSexo" id="cFem" value="F" />
+                    <label id="lbFem" for="cFem">Feminino</label>
+                    <label id="erroSexo"></label>
+                </p>
+                <p>
+                    <label for="cAltura">Qual a sua altura?</label>
+                    <input type="number" name="tAltura" id="cAltura" placeholder="Altura em metros" required>
+                    <label id="erroAltura"></label>
+                </p>
+                <p>
+                    <label for="cQuadril">Qual a circunferência do seu quadril?</label>
+                    <input type="number" name="tQuadril" id="cQuadril" placeholder="Quadril em centímetros" required>
+                    <label id="erroQuadril"></label>
+                </p>
+                <p>
+                    <label for="cResultado">Resultado:</label>
+                    <input type="text" name="tResultado" id="cResultado" placeholder="Seu resultado será mostrado aqui" readonly="readonly">
+                </p>
+                <p>
+                    <button id="btnSubmit" type="button" onclick="calcularIAC()">Calcular</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

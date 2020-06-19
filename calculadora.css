@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background-image: url('./_images/food2.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+form#formCalcIAC {
+    display: inline-block;
+    text-align: left;
+    width: 460px;
+}
+
+legend {
+    text-align: center;
+}
+
+input{
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+form button#btnSubmit{
+    margin-left: 40%;
+}
+fieldset{
+    padding: 10px;
+}
+input#cAltura{
+    width: 71%;
+}
+input#cQuadril{
+    width: 42%;
+}
+input#cResultado{
+    width: 81.5%;
+}
+input::-webkit-input-placeholder {
+    font-size: 10pt;
+}
+
